@@ -9,7 +9,11 @@ class MyApp extends StatelessWidget {
       title: 'FlutterPlayGround',
       home: Scaffold(
           appBar: AppBar(),
-          body: Text("Flutter Body"),
+          body: ListView(
+            children: <Widget>[
+              ListTile(leading: Icon(Icons.map), title: Text("Directions"))
+            ],
+          ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
             child: Icon(Icons.favorite),
